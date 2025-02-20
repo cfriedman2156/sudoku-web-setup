@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tile-highlight {
+  animation: highlight-pulse 1.5s infinite;
+}
+
+@keyframes highlight-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.hint-box {
+  transition: all 0.3s ease;
+}
+
+.hint-numbers {
+  font-weight: 600;
+  color: #1e40af;
+  z-index: 100;
+}
